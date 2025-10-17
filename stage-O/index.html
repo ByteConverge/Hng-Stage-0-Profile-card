@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card || HNG</title>
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+    <article data-testid="test-profile-card">
+        <header class="profile-header">
+            <figure>
+                <img 
+                    src="./me.jpg" 
+                    alt="Profile picture of Alex Johnson" 
+                    data-testid="test-user-avatar">
+                <figcaption>Frontend Web Developer</figcaption>
+            </figure>
+            
+            <h2 data-testid="test-user-name">Godstime Oyama</h2>
+            
+            <p data-testid="test-user-bio">
+               A frontend devloper with the passion to build beautiful and functional web applications 
+            </p>
+            
+            <div class="time-display">
+                Current Time: <span data-testid="test-user-time"></span> ms
+            </div>
+        </header>
+        
+        <div class="profile-content">
+            <section>
+                <h3>Hobbies</h3>
+                <ul data-testid="test-user-hobbies">
+                    <li>Drawing</li>
+                    <li>Listening to music</li>
+                    <li>Playing the Piano</li>
+                   <li>Coding</li>
+                </ul>
+            </section>
+            
+            <section>
+                <h3>Dislikes</h3>
+                <ul data-testid="test-user-dislikes">
+                    <li>Dishonesty</li>
+                    <li>Lies</li>   
+                </ul>
+            </section>
+            
+            <section>
+                <h3>Connect with me</h3>
+                <nav data-testid="test-user-social-links">
+                    <a href="https://x.com/godstime_oyama" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter">Twitter</a>
+                    <a href="https://github.com/ByteConverge" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github">Github</a>
+                    <a href="https://web.facebook.com/oyama.godstime" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-facebook">Facebook</a>
+                </nav>
+            </section>
+        </div>
+    </article>
+
+   <script src="./app.js"></script>
+</body>
+</html>
