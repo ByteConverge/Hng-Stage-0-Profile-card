@@ -14,10 +14,10 @@ start index.html
 ## Deployment
 Deployed on Vercel for fast and reliable hosting.
 
+
 ## Testing
 
 ### Manual Test Checklist
-
 All data-testid attributes are present and correct
 Profile card renders correctly on mobile (≤768px)
 Profile card renders correctly on desktop (>768px)
@@ -26,7 +26,6 @@ Social links open in new tab with proper security attributes
 Images have proper alt text for accessibility
 
 ### data-testid Reference
-
 test-profile-card - Root container
 test-user-name - User name display
 test-user-bio - User biography
@@ -42,19 +41,11 @@ test-user-dislikes - Dislikes list
 
 ## Browser Compatibility
 Tested and working on:
+Chrome 
+Safari 
 
-Chrome 90+
-Safari 14+
-
-## Notes
-
-Uses semantic HTML5 elements for better accessibility
-Mobile-first responsive design approach
-CSS Flexbox for layout
-Vanilla JavaScript for dynamic time updates
 
 ## Links
-
 GitHub Repository: https://github.com/ByteConverge/Hng-Stage-0-Profile-card.git
 Live Demo: https://profile-card-ebon-nu.vercel.app/
 
