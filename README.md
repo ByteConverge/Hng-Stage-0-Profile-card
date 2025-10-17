@@ -1,12 +1,12 @@
 # Hng-Stage-0-Profile-card
-# Profile Card - HNG Stage 0 Task
+
 
 A responsive and accessible profile card component built with vanilla HTML, CSS, and JavaScript.
 
 ## Live Demo
 https://profile-card-ebon-nu.vercel.app/
 
-## Local Development
+ # Profile Card - HNG Stage 0 Task
 
 ```cmd
 # Clone the repository
