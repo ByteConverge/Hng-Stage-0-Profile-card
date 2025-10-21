@@ -5,9 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile Card || HNG</title>
     <link rel="stylesheet" href="style.css">
-  
 </head>
 <body>
+      <div class="nav-container">
+        <nav data-testid="test-main-nav">
+            <!-- Desktop Navigation -->
+            <div class="nav-desktop">
+                <ul>
+                    <li><a href="index.html">Profile</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div class="nav-mobile">
+                <div class="nav-brand">Menu</div>
+                <button class="mobile-menu-button" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="mobile-menu">
+                    <a href="index.html">Profile</a>
+                    <a href="about.html">About Me</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
     <article data-testid="test-profile-card">
         <header class="profile-header">
             <figure>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Godstime Oyama</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div class="nav-container">
+        <nav data-testid="test-main-nav">
+            <!-- Desktop Navigation -->
+            <div class="nav-desktop">
+                <ul>
+                    <li><a href="index.html">Profile</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div class="nav-mobile">
+                <div class="nav-brand">Menu</div>
+                <button class="mobile-menu-button" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="mobile-menu">
+                    <a href="index.html">Profile</a>
+                    <a href="about.html">About Me</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="contact-container">
+        <main data-testid="test-contact-page">
+            <h1>Contact Me</h1>
+            <p>Get in touch with me. I'd love to hear from you!</p>
+            
+            <div data-testid="test-contact-success" class="success-message">
+                Thank you for your message! I'll get back to you soon.
+            </div>
+            
+            <form class="contact-form" novalidate>
+                <div class="form-group">
+                    <label for="contact-name">Full Name</label>
+                    <input 
+                        type="text" 
+                        id="contact-name"
+                        data-testid="test-contact-name"
+                        aria-describedby="name-error"
+                        required>
+                    <div id="name-error" data-testid="test-contact-error-name" class="error-message"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="contact-email">Email Address</label>
+                    <input 
+                        type="email" 
+                        id="contact-email"
+                        data-testid="test-contact-email"
+                        aria-describedby="email-error"
+                        required>
+                    <div id="email-error" data-testid="test-contact-error-email" class="error-message"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="contact-subject">Subject</label>
+                    <input 
+                        type="text" 
+                        id="contact-subject"
+                        data-testid="test-contact-subject"
+                        aria-describedby="subject-error"
+                        required>
+                    <div id="subject-error" data-testid="test-contact-error-subject" class="error-message"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="contact-message">Message</label>
+                    <textarea 
+                        id="contact-message"
+                        data-testid="test-contact-message"
+                        aria-describedby="message-error"
+                        required></textarea>
+                    <div id="message-error" data-testid="test-contact-error-message" class="error-message"></div>
+                </div>
+                
+                <button type="submit" data-testid="test-contact-submit">
+                    Send Message
+                </button>
+            </form>
+        </main>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
