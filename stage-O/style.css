@@ -27,9 +27,8 @@ body {
 }
 
 nav[data-testid="test-main-nav"] {
-    background-color: rgba(182, 181, 181, 0.281);
-    border-radius: 16px;
-    border: .4px solid black;
+    background-color: rgba(211, 208, 208, 0.281);
+    border-bottom: .4px solid black;
     padding: 1rem;
     margin-bottom: 2rem;
 }
@@ -68,7 +67,7 @@ article[data-testid="test-profile-card"] {
     max-width: 400px;
     width: 100%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-top: 80px;
+  margin-top: 45px;
 }
 
 article[data-testid="test-profile-card"]:hover {
@@ -185,7 +184,7 @@ a[data-testid^="test-user-social-"]:focus {
 .contact-container {
     max-width: 400px;
     width: 100%;
-    margin-top: 80px;
+   margin-top: 45px;
 }
 
 main[data-testid="test-contact-page"] {
@@ -296,7 +295,7 @@ button[data-testid="test-contact-submit"]:disabled {
 .about-container {
     max-width: 400px;
     width: 100%;
-    margin-top: 80px;
+    margin-top: 45px;
 }
 
 main[data-testid="test-about-page"] {
@@ -443,21 +442,20 @@ main[data-testid="test-about-page"]:hover {
 
 /* Navigation - Responsive */
 .nav-container {
-    position: absolute;
-    top: 20px;
+    position: fixed;
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 90%;
-    max-width: 400px;
+    width: 100%;
+    max-width: 100%;
     z-index: 1000;
 }
 
 nav[data-testid="test-main-nav"] {
-    background-color: rgba(182, 181, 181, 0.281);
-    border-radius: 16px;
-    border: .4px solid black;
+    background-color: rgb(255, 252, 252);
+    border-bottom: .4px solid black;
     padding: 1rem;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2px; */
     position: relative;
 }
 
@@ -537,8 +535,8 @@ nav[data-testid="test-main-nav"] {
     top: 100%;
     left: 0;
     right: 0;
-    background-color: rgba(182, 181, 181, 0.95);
-    border-radius: 0 0 16px 16px;
+    background-color: rgba(255, 255, 255, 0.95);
+    /* border-radius: 0 0 16px 16px; */
     border: .4px solid black;
     border-top: none;
     padding: 1rem;
@@ -546,6 +544,7 @@ nav[data-testid="test-main-nav"] {
     flex-direction: column;
     gap: 0.5rem;
     backdrop-filter: blur(10px);
+    min-height: 100vh;
 }
 
 .mobile-menu.active {
