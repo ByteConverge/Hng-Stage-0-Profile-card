@@ -564,7 +564,7 @@ nav[data-testid="test-main-nav"] {
 
 .mobile-menu a:hover,
 .mobile-menu a:focus {
-    background: rgba(153, 153, 153, 0.5);
+    background: rgba(192, 190, 190, 0.5);
     color: black;
     text-decoration: underline;
     border-color: #000000;
